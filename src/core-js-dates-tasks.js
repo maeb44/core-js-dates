@@ -315,7 +315,7 @@ function getWorkSchedule(period, countWorkDays, countOffDays) {
   const endData = toLocaleTime(period.end);
   const arrOfData = [];
 
-  for (; startData <= endData; ) {
+  for (; startData <= endData;) {
     for (let j = 1; j <= countWorkDays && startData <= endData; j += 1) {
       arrOfData.push(toLocaleStr(startData));
       startData.setDate(startData.getDate() + 1);
